@@ -1,3 +1,5 @@
+// = require ./scope_picker_enabler.component
+
 // Checks if the form contains fields with special CSS classes added in
 // Decidim::Admin::SettingsHelper and acts accordingly.
 $(() => {

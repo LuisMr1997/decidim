@@ -263,7 +263,7 @@ module Decidim
     # Returns a String.
     def scopes_picker(attribute, options = {})
       picker_options = {
-        id: "#{@object_name}_#{attribute}",
+        id: "#{@object_name.parameterize.underscore}_#{attribute}",
         class: "picker-#{options[:multiple] ? "multiple" : "single"}",
         name: "#{@object_name}[#{attribute}]"
       }
